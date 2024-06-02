@@ -1,0 +1,64 @@
+/* Card component styles */
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+@media only screen and (max-width: 768px) {
+    /* عندما يكون عرض الشاشة 768 بكسل أو أقل */
+    img {
+        max-width: 100%; /* ضمان تكيف حجم الصورة مع حجم الشاشة الصغيرة */
+        height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع للتصغير التلقائي */
+    }
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .card-content {
+    padding: 1rem;
+}
+
+.card .card-content h3 {
+    margin-top: 0;
+}
+
+.card .card-content p {
+    margin: 0.5rem 0;
+}
+
+.card .image-caption {
+    padding: 0.5rem 1rem;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}

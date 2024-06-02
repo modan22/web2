@@ -1,0 +1,75 @@
+@import url('typography.css');
+@import url('layout.css');
+@import url('components.css');
+
+@media only screen and (max-width: 600px) {
+    /* CSS styles for small screens */
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* CSS styles for medium screens */
+}
+@media only screen and (min-width: 1025px) {
+    /* CSS styles for large screens */
+}
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+figcaption {
+    font-style: italic;
+    color: #7f8c8d;
+    text-align: center;
+}
+header nav ul {
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+}
+.author-info {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distribute items evenly */
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    grid-gap: 20px;
+}
+.post {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    grid-gap: 20px;
+}
+
+
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    font-style: italic;
+    color: #7f8c8d;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    border-left: 4px solid #bdc3c7;
+}
+.social-sharing i{
+    width: 50px;
+    padding: 07px;
+}
+.card img{
+    width: 700px; 
+}
